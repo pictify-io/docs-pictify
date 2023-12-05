@@ -1,1 +1,3 @@
 site_name: Medify
+theme:
+  name: material

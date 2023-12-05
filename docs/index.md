@@ -1,5 +1,7 @@
 # Medify API
-#### Generate perfect Images and Gifs using the Medify API.
+
+ <b>Generate perfect Images and Gifs using the Medify API.</b>
+
 [![button]( https://img.shields.io/badge/Get%20Your%20API%20Key-grey?style=for-the-badge&logo=javascript)](https://your-link-here.com)
 
 ---
@@ -10,11 +12,11 @@ The API generates high quality images and gifs from HTML/CSS code. It is very ea
 * Convert URL to Image or Gif
 * Create reusable templates
 
-<br>
+
 
 ---
 
-### Convert HTML/CSS to Image
+## Convert HTML/CSS to Image
 
 
 The following image was generated using our API.
@@ -23,11 +25,11 @@ The following image was generated using our API.
 
 <img src = "https://htgf.s3.amazonaws.com/zry20-1698593673023.gif" width="400">
 
-<br>
+
 
 ---
 
-### Quick Start Code
+## Quick Start Code
 
 Look at the example code to get started quickly.
 
@@ -42,15 +44,15 @@ Look at the example code to get started quickly.
 
 You can also use integrate with Zapier, Integromat, and Pabbly Connect.
 
-<br>
+
 
 ---
 
-### Example Use Cases
+## Example Use Cases
 
 Here are some of the examples for which you can use the API to automate your media generation and create better experiences for your users.
 
-<br>
+
 
 ### Social Images : Dev.to
 
@@ -76,6 +78,8 @@ You can use the API to create better onboarding experiences for your users by ge
 You can use the API to capture screenshots of websites. Following is an screenshot of webflow.com generated using the API.
 
 <img src="https://htgf.s3.amazonaws.com/mn4gq-1701712259975.png" width="400px">
+
+
 
 
 
