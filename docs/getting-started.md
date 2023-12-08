@@ -188,6 +188,136 @@ DELETE https://api.medify.com/:id
 }
 ```
 
+### Creating a Template
+
+Make a HTTP request to the following endpoint to create a template.
+
+```
+POST https://api.medify.com/template
+```
+
+<b>Parameters</b>
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `html` <span style="color:red">*</span> | `string` | HTML code to be converted to image. The variables in the HTML should be wrapped in double curly braces. For example,  `<div>Hello {{name}}</div>` |
+| `name` | `string` | Name of the template. |
+| `width` | `number` | Default width of the viewport in pixels. Width can be overridden while creating a image/gif. |
+| `height` | `number` | Default height of the viewport in pixels. Height can be overridden while creating a image/gif. |
+
+
+<b>Example Response</b>
+
+`STATUS: 200 OK`
+
+```json
+{
+    "template": {
+        "id": "9tv83",
+        "name": "My Template",
+        "html": "<div>Hello {{name}}</div>",
+        "width": 1200,
+        "height": 630,
+        "createdAt": "2021-04-01T12:00:00.000Z",
+        "updatedAt": "2021-04-01T12:00:00.000Z"
+    }
+}
+```
+
+### Updating a Template
+
+Make a HTTP request to the following endpoint to update a template.
+
+```
+PUT https://api.medify.com/template/:id
+```
+
+<b>Parameters</b>
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `id` <span style="color:red">*</span> | `string` | ID of the template to be updated. |
+| `html` | `string` | HTML code to be converted to image. The variables in the HTML should be wrapped in double curly braces. For example,  `<div>Hello {{name}}</div>` |
+| `name` | `string` | Name of the template. |
+| `width` | `number` | Default width of the viewport in pixels. Width can be overridden while creating a image/gif. |
+| `height` | `number` | Default height of the viewport in pixels. Height can be overridden while creating a image/gif. |
+
+<b>Example Response</b>
+
+`STATUS: 200 OK`
+
+```json
+{
+    "template": {
+        "id": "9tv83",
+        "name": "My Template",
+        "html": "<div>Hello {{name}}</div>",
+        "width": 1200,
+        "height": 630,
+        "createdAt": "2021-04-01T12:00:00.000Z",
+        "updatedAt": "2021-04-01T12:00:00.000Z"
+    }
+}
+```
+
+### Deleting a Template
+
+Make a HTTP request to the following endpoint to delete a template.
+
+```
+DELETE https://api.medify.com/template/:id
+```
+
+<b>Parameters</b>
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `id` <span style="color:red">*</span> | `string` | ID of the template to be deleted. |
+
+<b>Example Response</b>
+
+`STATUS: 200 OK`
+
+```json
+{
+    "message": "deleted successfully"
+}
+```
+
+
+### Need Help?
+
+If you need any help, feel free to reach out to us at [support@medify.com](mailto:support@medify.com)
+
+---
+
+## Media Width and Height
+
+We generate the image/gif by rendering the HTML in a instance of Chrome in one of our servers. The width and height of the viewport is automatically calculated by evaluating the outermost element in the HTML. You can override the width and height by passing the `width` and `height` parameters in the request.
+
+
+### Example
+
+```html
+<div style = "height:500px; width:300px background-color:blue">
+  
+</div>
+```
+
+This HTML will render a blue box of size `300px` x `500px`. The viewport of the Chrome instance will be `300px` x `500px`.
+You can override the viewport size by passing the `width` and `height` parameters in the request.
+
+```json
+{
+    "html": "<div style = 'height:500px; width:300px background-color:blue'></div>",
+    "width": 800,
+    "height": 900
+}
+```
+
+This will make the viewport size `800px` x `900px`. The rendered image will be similar to how you see the HTML in the browser of size `800px` x `900px`.
+
+
 
 
 

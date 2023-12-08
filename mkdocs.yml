@@ -1,3 +1,6 @@
 site_name: Medify
 theme:
   name: material
+  palette:
+    primary: black
+    
