@@ -8,9 +8,9 @@
 
 ### Table of Contents
 
-* [Using The API](#introduction)
-* [URL To Image/GIF](#convert-htmlcss-to-image)
-* [Using Template](#quick-start-code)
+* [Using The API](#using-the-api)
+* [Media Width and Height](#media-width-and-height)
+* [Support](#support)
 
 ---
 
@@ -285,9 +285,6 @@ DELETE https://api.medify.com/template/:id
 ```
 
 
-### Need Help?
-
-If you need any help, feel free to reach out to us at [support@medify.com](mailto:support@medify.com)
 
 ---
 
@@ -302,10 +299,14 @@ We generate the image/gif by rendering the HTML in a instance of Chrome in one o
 <div style = "height:500px; width:300px background-color:blue">
   
 </div>
+
 ```
 
-This HTML will render a blue box of size `300px` x `500px`. The viewport of the Chrome instance will be `300px` x `500px`.
-You can override the viewport size by passing the `width` and `height` parameters in the request.
+This image generated from the above HTML will be a blue rectangle of size `300px` x `500px`. We auto-crop the image to remove any extra whitespace.
+
+Although, you can override the width and height by passing the `width` and `height` parameters in the request. This will not change the HTML, but will change the viewport size.
+
+<img src="https://res.cloudinary.com/diroilukd/image/upload/v1702068271/Cphq3_jv8ftl.png" style="padding: 10px; border: 1px solid #ccc; background-color: #eeeefe;">
 
 ```json
 {
@@ -315,11 +316,32 @@ You can override the viewport size by passing the `width` and `height` parameter
 }
 ```
 
+<img src="https://res.cloudinary.com/diroilukd/image/upload/v1702068271/Rt5h3_1701980470736_ory4th.png" style="padding: 10px; border: 1px solid #ccc; background-color: #eeeefe;">
+
 This will make the viewport size `800px` x `900px`. The rendered image will be similar to how you see the HTML in the browser of size `800px` x `900px`.
 
+---
 
 
+## Creating media from a URL
 
+You can also create media from a URL. We will fetch the HTML from the URL and render it in a instance of Chrome in one of our servers. It is better to provide the width and height of the viewport in this case. If you need to create image/gif of a certain part of webpage, you can use the `selector` parameter to specify the element to be captured.
+
+```json
+{
+    "url": "https://www.wikipedia.org/",
+    "width": 1200,
+    "height": 630,
+    "selector": ".central-featured"
+}
+```
+<img src="https://res.cloudinary.com/diroilukd/image/upload/v1702116869/SJP03_sbuahn.png" style="padding: 10px; border: 1px solid #ccc; background-color: #eeeefe;">
+
+<span style="color:red">*</span> We don't support URLs that require authentication. You can use our API to create media from a URL only if the URL is publicly accessible.
+
+## Need Help?
+
+If you need any help, feel free to reach out to us at [support@medify.com](mailto:support@medify.com)
 
 
 
