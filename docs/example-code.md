@@ -1,6 +1,6 @@
 # Example Code
 
-To get started quickly, you can use the following code snippets to generate images and gifs using the Medify API.
+To get started quickly, you can use the following code snippets to generate images and gifs using the Pictify API.
 
 ## Table of Contents
 
@@ -16,13 +16,13 @@ To get started quickly, you can use the following code snippets to generate imag
 Endpoint for generating Image -:
     
 ```
-POST https://api.medify.com/image
+POST https://api.pictify.io/image
 ```
 
 Endpoint for generating Gif -:
     
 ```
-POST https://api.medify.com/gif
+POST https://api.pictify.io/gif
 ```
 
 All the other parameters are same for both the endpoints.
@@ -39,7 +39,7 @@ const header = {
 }
 const config = {
 	method: 'post',
-	url: 'https://api.medify.com/image',
+	url: 'https://api.pictify.io/image',
 	headers: header,
 	data: data
 };
@@ -53,7 +53,7 @@ const image = await axios(config);
 import requests
 import json
 
-url = "https://api.medify.com/image"
+url = "https://api.pictify.io/image"
 
 payload = {'html': 'Hello World'}
 headers = {'Authorization': 'Bearer access_token', 'Content-Type': 'application/json'}
@@ -70,7 +70,7 @@ image = response.json()
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://api.medify.com/image',
+  CURLOPT_URL => 'https://api.pictify.io/image',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
@@ -104,7 +104,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 
-uri = URI.parse("https://api.medify.com/image")
+uri = URI.parse("https://api.pictify.io/image")
 http = Net::HTTP.new(uri.host, uri.port)
 http.use_ssl = true
 
@@ -130,7 +130,7 @@ import java.util.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    URL url = new URL("https://api.medify.com/image");
+    URL url = new URL("https://api.pictify.io/image");
     HttpURLConnection con = (HttpURLConnection) url.openConnection();
     con.setRequestMethod("POST");
     con.setRequestProperty("Authorization", "Bearer access_token");
@@ -172,7 +172,7 @@ class Program
 
     static async Task Main()
     {
-        var url = "https://api.medify.com/image";
+        var url = "https://api.pictify.io/image";
         var data = new StringContent("{\"html\": \"<h1>Hello World</h1>\"}", Encoding.UTF8, "application/json");
 
         client.DefaultRequestHeaders.Add("Authorization", "Bearer access_token");
@@ -196,7 +196,7 @@ import (
     "net/http"
 )
 func main() {
-    url := "https://api.medify.com/image"
+    url := "https://api.pictify.io/image"
     payload := []byte("{"html": "<html><body><h1>Hello World</h1></body></html>"}")
     req, _ := http.NewRequest("POST", url, bytes.NewBuffer(payload))
     req.Header.Set("Authorization", "Bearer access_token")
@@ -216,7 +216,7 @@ func main() {
 ## Curl
 
 ```bash
-curl --location --request POST 'https://api.medify.com/image' \
+curl --location --request POST 'https://api.pictify.io/image' \
 --header 'Authorization: Bearer access_token' \
 --header 'Content-Type: application/json' \
 --data-raw '{"html": "<h1>Hello World</h1>"}'

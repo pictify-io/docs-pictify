@@ -1,6 +1,6 @@
-# Medify API
+# Pictify API
 
- <b>Generate perfect Images and Gifs using the Medify API.</b>
+ <b>Generate perfect Images and Gifs using the Pictify API.</b>
 
 [![button]( https://img.shields.io/badge/Get%20Your%20API%20Key-grey?style=for-the-badge&logo=javascript)](https://your-link-here.com)
 
@@ -21,9 +21,9 @@ The API generates high quality images and gifs from HTML/CSS code. It is very ea
 
 The following image was generated using our API.
 
-<img src="https://htgf.s3.amazonaws.com/9tv83-1698983654151.png" width="400">
+<img src="https://htgf.s3.amazonaws.com/0j6nx-1708454014151.png" width="400">
 
-<img src = "https://htgf.s3.amazonaws.com/zry20-1698593673023.gif" width="400">
+<img src = "https://htgf.s3.amazonaws.com/79gob-1708453236503.gif" width="400">
 
 
 
@@ -71,7 +71,7 @@ Peerlist is a platform for developers, designers, product mangers and founders t
 
 You can use the API to create better onboarding experiences for your users by generating custom images/gifs for your emails.
 
-<img src="https://htgf.s3.amazonaws.com/db9r0-1701638155925.gif" width="400px">
+<img src="https://htgf.s3.amazonaws.com/bvhew-1703216378968.png" width="400px">
 
 ### Capture Screenshots : Website
 

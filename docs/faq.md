@@ -36,4 +36,4 @@ The url for image/gif is valid for forever unless you delete the image/gif.
 ---
 
 ### None of the current plans fit my needs. Can I get a custom plan?
-Yes, you can get a custom plan. Please contact us at [support@medify.com](mailto:support@medify.com) to get a custom plan.
+Yes, you can get a custom plan. Please contact us at [support@pictify.io](mailto:support@pictify.io) to get a custom plan.

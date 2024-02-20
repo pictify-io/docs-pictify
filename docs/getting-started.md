@@ -26,7 +26,7 @@
 Make a HTTP request to the following endpoint to create a image.
 
 ```
-POST https://api.medify.com/image
+POST https://api.pictify.io/image
 ```
 
 <b>Parameters</b>
@@ -78,7 +78,7 @@ POST https://api.medify.com/image
 Make a HTTP request to the following endpoint to create a GIF.
 
 ```
-POST https://api.medify.com/gif
+POST https://api.pictify.io/gif
 ```
 
 <b>Parameters</b>
@@ -131,7 +131,7 @@ POST https://api.medify.com/gif
 Make a HTTP request to the following endpoint to get a image.
 
 ```
-GET https://media.medify.com/:id
+GET https://media.pictify.io/:id
 ```
 
 <b>Parameters</b>
@@ -153,15 +153,15 @@ Images are served in the following formats:
 By default, the API will serve the image in `png` format if not format is being specified. You can specify the format in the URL.
 
 ```
-GET https://media.medify.com/:id.png
+GET https://media.pictify.io/:id.png
 ```
 
 ```
-GET https://media.medify.com/:id.jpg
+GET https://media.pictify.io/:id.jpg
 ```
 
 ```
-GET https://media.medify.com/:id.webp
+GET https://media.pictify.io/:id.webp
 ```
 
 ### Deleting a Image/GIF
@@ -169,7 +169,7 @@ GET https://media.medify.com/:id.webp
 Make a HTTP request to the following endpoint to delete a image/gif.
 
 ```
-DELETE https://api.medify.com/:id
+DELETE https://api.pictify.io/:id
 ```
 
 <b>Parameters</b>
@@ -193,7 +193,7 @@ DELETE https://api.medify.com/:id
 Make a HTTP request to the following endpoint to create a template.
 
 ```
-POST https://api.medify.com/template
+POST https://api.pictify.io/template
 ```
 
 <b>Parameters</b>
@@ -229,7 +229,7 @@ POST https://api.medify.com/template
 Make a HTTP request to the following endpoint to update a template.
 
 ```
-PUT https://api.medify.com/template/:id
+PUT https://api.pictify.io/template/:id
 ```
 
 <b>Parameters</b>
@@ -265,7 +265,7 @@ PUT https://api.medify.com/template/:id
 Make a HTTP request to the following endpoint to delete a template.
 
 ```
-DELETE https://api.medify.com/template/:id
+DELETE https://api.pictify.io/template/:id
 ```
 
 <b>Parameters</b>
@@ -341,7 +341,7 @@ You can also create media from a URL. We will fetch the HTML from the URL and re
 
 ## Need Help?
 
-If you need any help, feel free to reach out to us at [support@medify.com](mailto:support@medify.com)
+If you need any help, feel free to reach out to us at [support@pictify.io](mailto:support@pictify.io)
 
 
 
