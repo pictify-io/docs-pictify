@@ -3,8 +3,12 @@ theme:
   name: material
   palette:
     primary: black
+  logo: assets/logo.png
+  favicon: assets/icon.png
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Example Code: example-code.md
   - FAQ: faq.md
+extra_css:
+  - stylesheets/extra-styles.css
