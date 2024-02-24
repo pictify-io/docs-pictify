@@ -220,7 +220,7 @@ POST https://api.pictify.io/template
         "width": 1200,
         "height": 630,
         "createdAt": "2021-04-01T12:00:00.000Z",
-        "updatedAt": "2021-04-01T12:00:00.000Z"
+        "variables": ["name"]
     }
 }
 ```
@@ -256,8 +256,8 @@ PUT https://api.pictify.io/template/:id
         "width": 1200,
         "height": 630,
         "createdAt": "2021-04-01T12:00:00.000Z",
-        "updatedAt": "2021-04-01T12:00:00.000Z"
-    }
+        "variables": ["name"]
+  }
 }
 ```
 
@@ -340,8 +340,7 @@ You can also create media from a URL. We will fetch the HTML from the URL and re
 
 <span style="color:red">*</span> We don't support URLs that require authentication. You can use our API to create media from a URL only if the URL is publicly accessible.
 
-## Need Help?
-
+## Support
 If you need any help, feel free to reach out to us at [support@pictify.io](mailto:support@pictify.io)
 
 
