@@ -12,3 +12,5 @@ nav:
   - FAQ: faq.md
 extra_css:
   - stylesheets/extra-styles.css
+extra:
+  generator: false
