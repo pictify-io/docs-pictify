@@ -2,7 +2,7 @@
 
 <b>Get your API key and start generating images and gifs in minutes.</b>
 
-[![button]( https://img.shields.io/badge/Get%20Your%20API%20Key-black?style=for-the-badge&logo=)](http://localhost:5173/login)
+[![button]( https://img.shields.io/badge/Get%20Your%20API%20Key-black?style=for-the-badge&logo=)](http://pictify.io/login)
 
 
 ---
