@@ -1,4 +1,6 @@
 site_name: Pictify
+site_url: https://docs.pictify.io
+site_description: Pictify is a simple and easy-to-use html to image and Gif API.
 theme:
   name: material
   palette:
