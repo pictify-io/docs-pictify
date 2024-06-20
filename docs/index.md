@@ -2,7 +2,7 @@
 
  <b>Generate perfect Images and Gifs using the Pictify API.</b>
 
-[![button]( https://img.shields.io/badge/Get%20Your%20API%20Key-black?style=for-the-badge&logo=)](http://pictify.io/login)
+[![button]( https://img.shields.io/badge/Get%20Your%20API%20Key-black?style=for-the-badge&logo=)](https://pictify.io/login)
 
 ---
 
@@ -33,14 +33,14 @@ The following image was generated using our API.
 
 Look at the example code to get started quickly.
 
-* Javascript
-* Python
-* PHP
-* Ruby
-* Java
-* C#
-* Go
-* Curl
+* [Javascript](/example-code#javascript)
+* [Python](/example-code#python)
+* [PHP](/example-code#php)
+* [Ruby](/example-code#ruby)
+* [Java](/example-code#java)
+* [C#](/example-code#c)
+* [Go](/example-code#go)
+* [Curl](/example-code#curl)
 
 You can also use integrate with Zapier, Integromat, and Pabbly Connect.
 
